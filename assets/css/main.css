@@ -2369,6 +2369,117 @@ input, select, textarea {
 			width: 100%;
 		}
 
+/* Protean Page */
+
+.protean {
+	border-radius: 0.35em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+	.protean:before {
+		-moz-transition: opacity 0.2s ease-in-out;
+		-webkit-transition: opacity 0.2s ease-in-out;
+		-ms-transition: opacity 0.2s ease-in-out;
+		transition: opacity 0.2s ease-in-out;
+		background: url("images/overlay.png");
+		border-radius: 0.35em;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.protean.thumb {
+		text-align: center;
+	}
+
+	.protean.thumb:after {
+		-moz-transition: opacity 0.2s ease-in-out;
+		-webkit-transition: opacity 0.2s ease-in-out;
+		-ms-transition: opacity 0.2s ease-in-out;
+		transition: opacity 0.2s ease-in-out;
+		border-radius: 0.35em;
+		border: solid 3px rgba(255, 255, 255, 0.5);
+		color: #fff;
+		content: 'View';
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 400;
+		left: 50%;
+		line-height: 2.25em;
+		margin: -1.25em 0 0 -3em;
+		opacity: 0;
+		padding: 0 1.5em;
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		top: 50%;
+		white-space: nowrap;
+	}
+
+		.protean.thumb:hover:after {
+			opacity: 1.0;
+		}
+
+		.protean.thumb:hover:before {
+			background: url("images/overlay.png"), url("images/overlay.png");
+			opacity: 1.0;
+		}
+
+	.protean img {
+		border-radius: 0.35em;
+		display: block;
+	}
+
+	.protean.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.protean.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.protean.left, .protean.right {
+		max-width: 40%;
+	}
+
+		.protean.left img, .protean.right img {
+			width: 100%;
+		}
+
+	.protean.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		.protean.fit img {
+			width: 100%;
+		}
+
+	.protean.avatar {
+		border-radius: 100%;
+	}
+
+		.protean.avatar:before {
+			display: none;
+		}
+
+		.protean.avatar img {
+			border-radius: 100%;
+			width: 100%;
+		}
+
 /* AP Page */
 
 .ap {
